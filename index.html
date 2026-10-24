@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== META & CHARACTER SET ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== EXTERNAL STYLESHEETS & LIBRARIES ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    
+    <!-- Animate.css (Required for WOW.js) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <!-- jQuery (MUST come before Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 3 JS (needed for carousel) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    <!-- title and favicon -->
+    <title>FTS</title>
+    <link rel="icon" type="image/x-icon" href="../img/cap.jpg" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header-left">
+            <img src="../img/icons.jpg" alt="Avatar" class="avatar" onerror="this.style.display='none'" />
+            <a href="#home" class="logo">Fritzie's Tech Services<span>.</span></a>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- "active" is added automatically by script.js (scroll-spy) -->
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#works">Works</a>
+            <a href="#team">Team</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#faq">FAQs</a>
+            <a href="#contac_area">Contact</a>
+            <a href="#map">Our Location</a>
+        </nav>
+    </header>
+
+    <!-- ===== HOME ===== -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Tech To <span>Support</span></h1>
+            <div class="badge">✦ Work Under Pressure ✦</div>
+            <div class="typing-wrapper">
+                <span class="multiple-text" id="typed-text"></span>
+            </div>
+            <p class="desc-text">
+                offers comprehensive digital solutions—ranging from custom website development
+                and code troubleshooting to cybersecurity protection and creative graphic design.
+                We turn complex technical problems into secure, fast, and visually captivating
+                online platforms that drive business success.
+            </p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="Microsoft"><i class='bx bxl-microsoft'></i></a>
+                <a href="#" aria-label="Reddit"><i class='bx bxl-reddit'></i></a>
+                <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="Google"><i class='bx bxl-google'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#contac_area" class="btn"><i class='bx bx-paper-plane'></i> Contact Us</a>
+                <a href="#accordion" class="btn btn-outline"><i class='bx bx-user'></i> Learn Today</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="../img/icons.jpg" alt="FTS Logo" />
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="service-area" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title text-center wow zoomIn">
+                        <h2>SERVICES</h2>
+                        <p>We offer a full spectrum of digital solutions tailored to your business needs.</p>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row wow fadeInUp">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-code-alt'></i></span>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom websites, web apps, and e-commerce platforms built with modern technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-paint'></i></span>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Logos, branding, social media assets, and visual identities that make you stand out.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-shield-alt-2'></i></span>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Vulnerability assessments, penetration testing, and security hardening for your systems.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-mobile-alt'></i></span>
+                        </div>
+                        <h3>Mobile Responsive</h3>
+                        <p>Pixel-perfect responsive designs that work seamlessly on every device and screen size.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-server'></i></span>
+                        </div>
+                        <h3>BackEnd Solutions</h3>
+                        <p>Scalable server architecture, APIs, databases, and cloud infrastructure management.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <span class="icon"><i class='bx bx-support'></i></span>
+                        </div>
+                        <h3>Tech Support</h3>
+                        <p>24/7 technical assistance, troubleshooting, and maintenance for your digital assets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORKS ===== -->
+    <section class="work" id="works">
+        <div class="container text-center" style="margin-bottom: 20px;">
+            <h2 class="works-title">WO<span>RKS</span></h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A beautiful village during sunset, surrounded by mountains and trees">
+                            <img src="../img/wk1.jpg" class="img-responsive" alt="Work 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A peaceful Japanese-inspired landscape with a full moon, cherry blossoms, and a traditional temple.">
+                            <img src="../img/wk2.jpg" class="img-responsive" alt="Work 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A colorful garden filled with bright sunflowers, flowers, and a dreamy purple-blue sky.">
+                            <img src="../img/wk3.jpg" class="img-responsive" alt="Work 3">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A scenic countryside with colorful flowers, green hills, and beautiful mountain view.">
+                            <img src="../img/wk4.jpg" class="img-responsive" alt="Work 4">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A night landscape inspired by Starry Night, featuring a glowy moon and a field of sunflowers.">
+                            <img src="../img/wk5.jpg" class="img-responsive" alt="Work 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A cozy cottage beside a calm lake, surrounded by cherry blossom trees and mountains.">
+                            <img src="../img/wk6.jpg" class="img-responsive" alt="Work 6">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A bright blue lakeside village with mountains, houses, and clear water.">
+                            <img src="../img/wk7.jpg" class="img-responsive" alt="Work 7">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="img-wrapper">
+                        <a href="#" title="A magical garden with colorful flowers, green plants, and warm sunlight shining through the trees.">
+                            <img src="../img/wk8.jpg" class="img-responsive" alt="Work 8">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="heading">Our <span>Team</span></h2>
+            <div class="team-carousel">
+                <div class="team-track">
+                    <div class="team-slide"><div class="team-card"><div class="team-image"><img src="../img/pg1.jpg" alt="Byte"></div><h3>Byte</h3><p>FrontEnd Developer</p></div></div>
+                    <div class="team-slide"><div class="team-card"><div class="team-image"><img src="../img/pg2.jpg" alt="Pixel"></div><h3>Pixel</h3><p>UI/UX Designer</p></div></div>
+                    <div class="team-slide"><div class="team-card"><div class="team-image"><img src="../img/pg3.jpg" alt="Shadow"></div><h3>Shadow</h3><p>Graphic Designer</p></div></div>
+                    <div class="team-slide"><div class="team-card"><div class="team-image"><img src="../img/pg4.jpg" alt="Nova"></div><h3>Nova</h3><p>Backend Developer</p></div></div>
+                    <div class="team-slide"><div class="team-card"><div class="team-image"><img src="../img/pg5.jpg" alt="Cipher"></div><h3>Cipher</h3><p>Cybersecurity</p></div></div>
+                </div>
+                <button class="team-prev" type="button" aria-label="Previous team member">❮</button>
+                <button class="team-next" type="button" aria-label="Next team member">❯</button>
+                <div class="team-dots" aria-label="Team carousel navigation"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="testimonials" id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeInDown">
+                    <br><br>
+                    <h2>REVIEWS</h2>
+                    <div class="sub-heading">
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row wow fadeInDown">
+                <div class="col-sm-12">
+                    <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                            <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active text-center">
+                                <img src="../img/coffee.jpg" class="testimonial-img center-block" alt="Darwin">
+                                <h2>Zyron Blackwell</h2>
+                                <h4>Senior Engineer</h4>
+                                <p>Futurictic innovation and technical expertise</p>
+                            </div>
+                            <div class="item text-center">
+                                <img src="../img/laptop.jpg" class="testimonial-img center-block" alt="Gumball">
+                                <h2>Kairo Vexley</h2>
+                                <h4>Product Manager</h4>
+                                <p>Creativity, strategy, and digital transformation</p>
+                            </div>
+                            <div class="item text-center">
+                                <img src="../img/computer.jpg" class="testimonial-img center-block" alt="Anais">
+                                <h2>Aether Ravenshade</h2>
+                                <h4>CTO, Innovate Inc.</h4>
+                                <p>Advanced computing, intelligence, and leadership</p>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-testimonials" data-slide="prev" title="Previous slide">
+                            <span class="icon-prev" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-testimonials" data-slide="next" title="Next slide">
+                            <span class="icon-next" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--...FAQ Markups Start...-->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2><b>GENERAL FAQs</b></h2>
+                    <div class="sub-heading">
+                        <p style="font-size:small;">You can ask the question regarding the issues we will<br>
+                            solve that together for sure
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <!-- FAQ Column (takes 6 columns) -->
+            <div class="col-md-6">
+                <div class="panel-group" id="accordion">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingOne">
+                            <h4 class="panel-title">
+                                <a href="#collapseOne" class="collapsed" data-toggle="collapse" data-parent="#accordion">Do you build custom websites?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <span class="panel-caption">Web Development</span>
+                                <p>
+                                    Yes! We specialize in custom website development. Whether you need a simple portfolio, a complex e-commerce store, or a custom web application, our team builds fast, responsive, and secure platforms tailored to your business needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#accordion">How do you handle website security?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <span class="panel-caption">Cybersecurity</span>
+                                <p>
+                                    Security is our top priority. We perform vulnerability assessments, penetration testing, and implement robust security hardening. We also set up SSL certificates and firewalls to ensure your digital assets are protected from threats.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingThree">
+                            <h4 class="panel-title">
+                                <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-parent="#accordion">Do you offer branding and graphic design?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <span class="panel-caption">Graphic Design</span>
+                                <p>
+                                    Absolutely. From logo creation and brand identity to social media graphics and marketing materials, our creative team ensures your brand stands out visually and connects with your target audience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingFour">
+                            <h4 class="panel-title">
+                                <a href="#collapseFour" class="collapsed" data-toggle="collapse" data-parent="#accordion">Do you provide ongoing tech support?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <span class="panel-caption">Tech Support</span>
+                                <p>
+                                    Yes, we offer 24/7 technical assistance, troubleshooting, and regular maintenance. Whether you need help with a sudden bug or just want to keep your systems updated, we are here to support you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Phone Image Column (takes 6 columns) -->
+            <div class="col-md-6 freeimage wow fadeInRight">
+                <img src="../img/phone.png" alt="Phone Mockup" class="img-responsive">
+            </div>
+            
+        </div>
+    </div>
+    </section>
+    <!--...FAQ Markups End...-->
+
+<!-- ===== VIDEO ===== -->
+<section class="video-area" id="video">
+    <div id="color_overlay" class="color-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="video-container">
+                        <img src="../img/vid.jpg" alt="Featured video preview" class="video-preview">
+                        <div class="video-mask">
+                            <a href="https://youtu.be/GxmfcnU3feo?si=77812bmnrBkFIkXF" class="play" target="_blank" rel="noopener noreferrer" aria-label="Play featured video">
+                                <img src="../img/play-btn.png" alt="Play video button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------Blog Markup Starts------------->
+
+<section class="latest-news-area" id="latest">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center wow zoomIn">
+                    <h2><b>RECENT BLOGS</b></h2>
+                    <div class="sub-heading">
+                        You can ask the question regarding the issues we will<br>
+                        solve that together for sure
+                    </div>
+
+                </div>
+            </div>
+        </div><br><br>
+
+        <div class="row">
+            <div class="news-active">
+                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft">
+                    <div class="latest-news-wrap">
+                        <div class="news-img">
+                            <img src="../img/pglaptop.jpg" class="img-responsive" alt="">
+                            <div class="deat">
+                                <span>31</span>
+                                <span>Dec</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-whatsapp"></i>
+
+                            <p>
+                                Exlpore the world of coding and programming, where developers write code, solve
+                                problems, and create software applications. Learn how programming skills can
+                                turn ideas int real-world solutions.
+                            </p><br>
+                            <a href="https://www.w3schools.com/">Read more..</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-xs-12 wow slideInUp">
+                    <div class="latest-news-wrap">
+                        <div class="news-img">
+                            <img src="../img/pgpython.jpg" class="img-responsive" alt="">
+                            <div class="deat">
+                                <span>31</span>
+                                <span>Dec</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-whatsapp"></i>
+
+                            <p>
+                                Discover the power of Python, a beginner-friendly programming language used in web
+                                development, automation, data analysis, and artificial intelligence. Start learning Python
+                                and build your own projects.
+                            </p><br>
+                            <a href="https://www.w3schools.com/">Read more..</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight">
+                    <div class="latest-news-wrap">
+                        <div class="news-img">
+                            <img src="../img/pgcomputer.jpg" class="img-responsive" alt="">
+                            <div class="deat">
+                                <span>31</span>
+                                <span>Dec</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-whatsapp"></i>
+
+                            <p>
+                                Learn how developers create modern websites and mobile applications using
+                                programming, creative design, and innovative technologies. Discover the tools and
+                                tehniques behind the digital experiences we use every day.
+                            </p><br>
+                            <a href="https://www.w3schools.com/">Read more..</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ===== /RECENT BLOGS ===== -->
+
+   <!------------Counter stats Markup Starts------------->
+
+<section class="stat " id="stats">
+    <div class="content-box">
+        <br><br>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="stat-items">
+                        <i class="fa fa-tv"></i>
+                        <h2><span class="counter text-center ">3200</span> <span>+</span></h2>
+                        <p>VIEWS</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="stat-items">
+                        <i class="fa fa-android"></i>
+                        <h2><span class="counter text-center">3987</span> <span>+</span></h2>
+                        <p>ANDROID USER</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="stat-items">
+                        <i class="fa fa-apple"></i>
+                        <h2><span class="counter text-center">7289</span> <span>+</span></h2>
+                        <p>INTERNATIONALLY</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="stat-items">
+                        <i class="fa fa-windows"></i>
+                        <h2><span class="counter text-center">3934</span> <span>+</span></h2>
+                        <p>WINDOW SUPPORTS</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!------------From Markup Starts------------->
+
+<section class="contact-area" id="contac_area">
+    <div class="container-fluid">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="section-heading wow fadeInUp">
+                    <h2 class="sectiontitle"><b>LEAVE A MESSAGE</b></h2>
+                    <div class="border-bottom-now"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="row wow fadeInUp">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="contactform" class="contact-form" action="" method="post" novalidate>
+                    <div id="form-alert" class="form-alert" role="alert" style="display:none;"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input id="email" class="form-control" type="email" name="Email" placeholder="Email" required>
+                        </div>
+
+                        <div class="col-md-12"><br>
+                            <input type="text" id="subject" placeholder="Subject" class="form-control" name="subject" required>
+                        </div>
+
+                        <div class="col-md-12"><br>
+                            <textarea id="message" name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center"><br><br>
+                            <button class="btnn" type="submit">Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="row">
+            <div class="contact-infos">
+
+                <div class="contact-col">
+                    <div class="contact-item wow fadeInLeft">
+                        <span class="contact-icon"><i class="fa fa-map-marker"></i></span>
+                        <p class="contact-detail">
+                            Villareal, Bayawan City<br>
+                            Negros Oriental, Philippines
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-col">
+                    <div class="contact-item wow fadeInLeft">
+                        <span class="contact-icon"><i class="fa fa-envelope"></i></span>
+                        <p class="contact-detail">
+                            info@negortek.com <br>
+                            support@negortek.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-col">
+                    <div class="contact-item wow fadeInLeft">
+                        <span class="contact-icon"><i class="fa fa-phone"></i></span>
+                        <p class="contact-detail">
+                            +123-456-7890 - Central Office<br>
+                            +123-456-7890 - Fax
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ----------Markup for Maps---------- -->
+
+<section class="maps" id="map">
+
+    <iframe
+        src="https://www.google.com/maps?q=9.3658,122.8032&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+</section>
+    
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#home" class="logo" style="font-size:medium">FTS<span>.</span></a>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="Microsoft"><i class='bx bxl-microsoft'></i></a>
+                <a href="#" aria-label="Reddit"><i class='bx bxl-reddit'></i></a>
+                <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="Google"><i class='bx bxl-google'></i></a>
+            </div>
+            <p class="copy">&copy; Developed by Fritzie Faura. All rights reserved &lt;/&gt;.</p>
+        </div>
+    </footer>
+
+ 
+    <!-- ===== IMAGE ZOOM MODAL ===== -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-btn" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" src="" alt="Enlarged view">
+    </div>
+
+    <!-- ===== CUSTOM JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>if (typeof WOW !== 'undefined') new WOW().init();</script>
+</body>
+</html>
